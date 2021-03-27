@@ -7,11 +7,13 @@ import java.util.Scanner;
  */
 public class Perkalian_Matriks3 {
     public static void main(String[] args) {
+        // Kode program perkalian pada matirks
         Scanner input = new Scanner(System.in);       
         System.out.println("3. Program perkalian matriks A dan B");
         int kolom_A, baris_A, kolom_B, baris_B;
         
             // Proses penginputan jumlah ordo baris dan kolom pada matriks A
+            
             //System.out.print("Inputkan Baris Matriks A : ");
             baris_A = 2; //input.nextInt();
             //System.out.print("Inputkan Kolom Matriks A : ");
@@ -19,6 +21,7 @@ public class Perkalian_Matriks3 {
             System.out.println("Matriks A = " + baris_A + "x" + kolom_A + '\n');
 
             // Proses penginputan jumlah ordo baris dan kolom pada matriks B
+            
             //System.out.print("Inputkan Baris Matriks B : ");
             baris_B = 3; //input.nextInt();
             //System.out.print("Inputkan Kolom Matriks B : ");
@@ -42,6 +45,7 @@ public class Perkalian_Matriks3 {
             System.out.println();
         }
         System.out.println();
+        
         // Proses penginputan value pada baris dan kolom matriks B
         int[][] matriks_B = new int[baris_B][kolom_B];
         for (int i = 0; i < baris_B; i++) {
@@ -50,6 +54,7 @@ public class Perkalian_Matriks3 {
                 matriks_B[i][j] = input.nextInt();
             }
         }
+        
         // Proses menampilkan matriks B
         System.out.println('\n' + "Matriks B = ");
         for (int i = 0; i < baris_B; i++) {
@@ -59,7 +64,8 @@ public class Perkalian_Matriks3 {
             System.out.println();
         }
         System.out.println();
-        if(kolom_A == baris_B){
+        
+        if(kolom_A == baris_B){ // Pengondisian akan berjalan apabila ordo matriks bersifat dinamis
             System.out.println('\n' + "Matriks Hasil Perkalian" + '\n'+ "Matriks C = " + baris_A + "x" +kolom_B);
         int[][] hasil = new int[baris_A][kolom_B];
         for (int i = 0; i < baris_A; i++) {

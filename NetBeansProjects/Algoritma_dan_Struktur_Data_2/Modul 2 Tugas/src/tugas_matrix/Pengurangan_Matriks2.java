@@ -7,11 +7,13 @@ import java.util.Scanner;
  */
 public class Pengurangan_Matriks2 {
     public static void main(String[] args) {
+        // Kode program pengurangan pada matriks
         Scanner input = new Scanner(System.in);       
         System.out.println("2. Program pengurangan pada matriks A dan B");
         int kolom_A, baris_A, kolom_B, baris_B;
         
             // Proses penginputan jumlah ordo baris dan kolom pada matriks A
+            
             //System.out.print("Inputkan Baris Matriks A : ");
             baris_A = 3; //input.nextInt();
             //System.out.print("Inputkan Kolom Matriks A : ");
@@ -19,6 +21,7 @@ public class Pengurangan_Matriks2 {
             System.out.println("Matriks A = " + baris_A + "x" + kolom_A + '\n');
 
             // Proses penginputan jumlah ordo baris dan kolom pada matriks B
+            
             //System.out.print("Inputkan Baris Matriks B : ");
             baris_B = 3; //input.nextInt();
             //System.out.print("Inputkan Kolom Matriks B : ");
@@ -33,6 +36,7 @@ public class Pengurangan_Matriks2 {
                 matriks_A[i][j] = input.nextInt();
             }
         }
+        
         // Proses menampilkan matriks A
         System.out.println( '\n' + "Matriks A = ");
         for (int i = 0; i < baris_A; i++) {
@@ -42,6 +46,7 @@ public class Pengurangan_Matriks2 {
             System.out.println();
         }
         System.out.println();
+        
         // Proses penginputan value pada baris dan kolom matriks B
         int[][] matriks_B = new int[baris_B][kolom_B];
         for (int i = 0; i < baris_B; i++) {
@@ -50,6 +55,7 @@ public class Pengurangan_Matriks2 {
                 matriks_B[i][j] = input.nextInt();
             }
         }
+        
         // Proses menampilkan matriks B
         System.out.println('\n' + "Matriks B = ");
         for (int i = 0; i < baris_B; i++) {
@@ -62,7 +68,7 @@ public class Pengurangan_Matriks2 {
         
         // Proses pengurangan matriks
         System.out.println("Matriks hasil pengurangan" + '\n' + "Matriks C = " + '\n');
-        if((baris_A == baris_B) && (kolom_A == kolom_B)) {
+        if((baris_A == baris_B) && (kolom_A == kolom_B)) { // Pengondisian akan berjalan apabila ordo matriks bersifat dinamis
             int[][] C = new int[baris_A][kolom_A];
             for(int c = 0; c < baris_A; c++){
                 for(int d = 0; d < kolom_A; d++){

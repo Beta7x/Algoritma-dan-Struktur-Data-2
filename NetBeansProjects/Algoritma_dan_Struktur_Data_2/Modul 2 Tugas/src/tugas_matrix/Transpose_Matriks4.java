@@ -7,9 +7,11 @@ import java.util.Scanner;
  */
 public class Transpose_Matriks4 {
     public static void main(String[] args) {
+        // Kode program transpose pada matriks
         Scanner input = new Scanner(System.in);
         System.out.println("4. Transpose matriks, dari matriks 2x3 diubah menjadi matriks 3x2 dimana angka pada elemen-elemen matriks dijelaskan seperti pada gambar soal no 4");
         int baris_B = 2, kolom_B = 3;
+        
         int[][] matriks_B = new int[baris_B][kolom_B];
         for (int i = 0; i < baris_B; i++) {
             for (int j = 0; j < kolom_B; j++) {
@@ -19,7 +21,7 @@ public class Transpose_Matriks4 {
         }
         System.out.println();
         
-        int[][] matriks_Bt = new int [3][2];
+        int[][] matriks_Bt = new int [kolom_B][baris_B];
         System.out.println("Matriks B : ");
         for(int a = 0; a < baris_B; a++){
             for(int b = 0; b < kolom_B; b++){
@@ -35,6 +37,7 @@ public class Transpose_Matriks4 {
             System.out.println();
         }
 
+        // Output hasi transpose matriks
         System.out.println("Hasil Transpose = matriks Bt");
         for(int a = 0; a < kolom_B; a++){
             for(int b = 0; b < baris_B; b++){

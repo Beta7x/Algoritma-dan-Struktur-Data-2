@@ -30,6 +30,7 @@ public class Transpose_Matriks4 {
             System.out.println();
         }
         
+        // Proses transpose matriks
         for(int a = 0; a < baris_B; a++){
             for(int b = 0; b < kolom_B; b++){
                 matriks_Bt[b][a] = matriks_B[a][b];

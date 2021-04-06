@@ -1,0 +1,2 @@
+module tugas_praktikum {
+}
